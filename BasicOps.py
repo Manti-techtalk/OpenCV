@@ -27,3 +27,5 @@ while True:
 video.release()
 cv.destroyAllWindows() # clean up
 
+
+
