@@ -1,8 +1,8 @@
-import cv2 as cv
+import cv2 as cv # import the opencv 
 # working with images
-image = cv.imread("pic.jpg")
-cv.imshow("Image",image)
-cv.waitKey(0)
+image = cv.imread("pic.jpg") #imread loeads and displays the oicture and video
+cv.imshow("Image",image) # imshow shows the loaded picture
+cv.waitKey(0)#wait before pressing a certain key
 cv.destroyAllWindows()
 
 #convert the image to the greyscale

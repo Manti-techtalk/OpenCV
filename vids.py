@@ -1,12 +1,24 @@
 import cv2 as cv
 
-video = cv.VideoCapture(0)
-
+video = cv.VideoCapture("vid.mp4")
+ 
 while True:
-    isTrue , frame = video.read()
-    cv.imshow("Live Cam ",frame)
+    isTrue,frame = video.read()
 
-    if cv.waitKey == 20 & 0xFF == ord("d"):
-        break
+    if isTrue:
+        cv.imshow("Video Reading",frame)
+        if cv.waitKey(0) & 0xFF == ord('q'):
+            break
+        else:
+            break
+
+
+
+
 video.release()
 cv.destroyAllWindows()
+
+    
+
+
+
